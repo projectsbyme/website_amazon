@@ -1,0 +1,48 @@
+/* Reset some default margin and padding for consistency */
+body, h1, p, footer {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #555;
+    font-size: 16px;
+}
+
+iframe {
+    display: block;
+    margin: 20px auto; /* Center the iframe */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Style the "Buy Now" button (replace this with your actual button or link styles) */
+a.button {
+    display: inline-block;
+    background-color: #ff9900;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+a.button:hover {
+    background-color: #e68a00;
+}
+
