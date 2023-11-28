@@ -9,7 +9,7 @@
     <style>
         body {
             font-family: 'Quicksand', sans-serif;
-            background-color: #f5f5dc; /* Beige background color */
+            background-color: #f5f5dc;
             color: #333;
             margin: 0;
             padding: 0;
@@ -17,12 +17,12 @@
             text-align: center;
             display: flex;
             flex-direction: column;
-            min-height: 100vh; /* Set the body to at least the full viewport height */
+            min-height: 100vh;
         }
 
         h1 {
-            color: #003366; /* Dark blue color for the header */
-            margin-top: 50px; /* Adjust as needed */
+            color: #003366;
+            margin-top: 50px;
         }
 
         p {
@@ -33,23 +33,29 @@
 
         .amazon-container {
             display: flex;
+            flex-wrap: wrap; /* Allow products to wrap to the next row */
             justify-content: space-around;
             margin: 20px auto;
         }
 
-        iframe {
+        .amazon-product {
             width: 30%; /* Adjust as needed */
+            margin-bottom: 20px; /* Add margin between products */
+        }
+
+        iframe {
+            width: 100%;
             height: 240px;
-            border: 1px solid #ddd; /* Add border for separation */
+            border: 1px solid #ddd;
             box-sizing: border-box;
         }
 
         .content {
-            flex: 1; /* This will push the content to take all available space */
+            flex: 1;
         }
 
         footer {
-            background-color: #2b71b8; /* Dark blue color for the footer */
+            background-color: #2b71b8;
             color: #fff;
             text-align: center;
             padding: 10px 0;
@@ -59,7 +65,7 @@
             position: absolute;
             top: 10px;
             right: 10px;
-            color: #003366; /* Dark blue color for the created by text */
+            color: #003366;
             font-size: 14px;
         }
     </style>
@@ -70,27 +76,37 @@
     <div class="created-by">Created by pixel.bef</div>
 
     <h1>Welcome to my Website</h1>
-    
+
     <p>Check out items I purchase from Amazon to do my Pixel Art! Create stunning pixel art designs using these products.</p>
 
     <!-- Amazon Product iframes Container -->
     <div class="amazon-container">
-        <iframe sandbox="allow-popups allow-scripts allow-modals allow-forms allow-same-origin" frameborder="0" src="https://ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=craftypixel8-20&language=en_US&marketplace=amazon&region=US&placement=B09NPS6C9B&asins=B09NPS6C9B&linkId=b2a766b862dac0c7ee426b9c8ae29bb3&show_border=true&link_opens_in_new_window=true"></iframe>
+        <div class="amazon-product">
+            <iframe sandbox="allow-popups allow-scripts allow-modals allow-forms allow-same-origin" frameborder="0" src="https://ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=craftypixel8-20&language=en_US&marketplace=amazon&region=US&placement=B09NPS6C9B&asins=B09NPS6C9B&linkId=b2a766b862dac0c7ee426b9c8ae29bb3&show_border=true&link_opens_in_new_window=true"></iframe>
+        </div>
 
-        <iframe sandbox="allow-popups allow-scripts allow-modals allow-forms allow-same-origin" frameborder="0" src="https://ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=craftypixel8-20&language=en_US&marketplace=amazon&region=US&placement=B096V2RYR2&asins=B096V2RYR2&linkId=4602beb429fddcf45d86eff181b114d9&show_border=true&link_opens_in_new_window=true"></iframe>
+        <div class="amazon-product">
+            <iframe sandbox="allow-popups allow-scripts allow-modals allow-forms allow-same-origin" frameborder="0" src="https://ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=craftypixel8-20&language=en_US&marketplace=amazon&region=US&placement=B096V2RYR2&asins=B096V2RYR2&linkId=4602beb429fddcf45d86eff181b114d9&show_border=true&link_opens_in_new_window=true"></iframe>
+        </div>
 
-        <iframe sandbox="allow-popups allow-scripts allow-modals allow-forms allow-same-origin" frameborder="0" src="https://ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=craftypixel8-20&language=en_US&marketplace=amazon&region=US&placement=B0CJZZLM36&asins=B0CJZZLM36&linkId=4468ff7044af07f0a868df53337de599&show_border=true&link_opens_in_new_window=true"></iframe>
+        <div class="amazon-product">
+            <iframe sandbox="allow-popups allow-scripts allow-modals allow-forms allow-same-origin" frameborder="0" src="https://ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=craftypixel8-20&language=en_US&marketplace=amazon&region=US&placement=B0CJZZLM36&asins=B0CJZZLM36&linkId=4468ff7044af07f0a868df53337de599&show_border=true&link_opens_in_new_window=true"></iframe>
+        </div>
 
-        <iframe sandbox="allow-popups allow-scripts allow-modals allow-forms allow-same-origin" frameborder="0" src="https://ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=craftypixel8-20&language=en_US&marketplace=amazon&region=US&placement=B09NNRD7GJ&asins=B09NNRD7GJ&linkId=d514d1879583f8c0e734121d48d5abe8&show_border=true&link_opens_in_new_window=true"></iframe>
+        <div class="amazon-product">
+            <iframe sandbox="allow-popups allow-scripts allow-modals allow-forms allow-same-origin" frameborder="0" src="https://ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=craftypixel8-20&language=en_US&marketplace=amazon&region=US&placement=B09NNRD7GJ&asins=B09NNRD7GJ&linkId=d514d1879583f8c0e734121d48d5abe8&show_border=true&link_opens_in_new_window=true"></iframe>
+        </div>
 
-        <iframe sandbox="allow-popups allow-scripts allow-modals allow-forms allow-same-origin" frameborder="0" src="https://ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=craftypixel8-20&language=en_US&marketplace=amazon&region=US&placement=B000I0TZO4&asins=B000I0TZO4&linkId=305cb2cfb6e3527d23ce9fb7269bc509&show_border=true&link_opens_in_new_window=true"></iframe>
+        <div class="amazon-product">
+            <iframe sandbox="allow-popups allow-scripts allow-modals allow-forms allow-same-origin" frameborder="0" src="https://ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=craftypixel8-20&language=en_US&marketplace=amazon&region=US&placement=B000I0TZO4&asins=B000I0TZO4&linkId=305cb2cfb6e3527d23ce9fb7269bc509&show_border=true&link_opens_in_new_window=true"></iframe>
+        </div>
     </div>
-            
+
     <p>Get your pixel art game to the next level with these fantastic items. Click the "Shop now" button to make your purchase on Amazon.</p>
 
     <!-- Add your own "Buy Now" button or link to direct users to the product page -->
 
-    <div class="content"></div> <!-- This div will take up the remaining space -->
+    <div class="content"></div>
 
     <footer>
         <p>© 2023 Your Pixel Art Store.</p>
